@@ -1,0 +1,18 @@
+# Doas (rather than sudo)
+alias sudo='doas --'
+
+# Htop (rather than top)
+alias top='htop'
+
+# Listing files with fashion
+alias ls='exa -la --group-directories-first'
+alias tree='exa -aT --color=always --group-directories-first'
+alias l.='exa -a | egrep "^\."'
+
+# Colorize grep output (good for log files)
+alias grep='grep --color=auto'
+alias egrep='egrep --color=auto'
+alias fgrep='fgrep --color=auto'
+
+# Dotfiles management
+alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'

@@ -16,6 +16,10 @@ set $menu dmenu_path | dmenu | xargs swaymsg exec --
 # Wallpaper
 output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
 
+# Window decorations
+default_border none
+gaps inner 5
+
 # Monitors
 output HDMI-A-1 mode 2560x1440@75Hz pos 0,0
 output eDP-1 mode 1920x1080@120Hz pos 320,1440
@@ -33,7 +37,7 @@ bindsym $mod+Return exec $term
 
 # Kill windows
 bindsym $mod+q kill
-bindsym Alt+F4
+bindsym Alt+F4 kill
 
 # Start your launcher
 bindsym $mod+d exec $menu
