@@ -1,3 +1,4 @@
 alias sudo="doas"
+alias top="htop"
 alias ls="exa -lag"
 alias config="/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
