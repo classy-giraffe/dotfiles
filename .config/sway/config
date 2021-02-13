@@ -7,11 +7,17 @@ set $down j
 set $up k
 set $right l
 
+# Font
+font pango:MesloLGS Nerd Font Mono
+
 # Terminal
 set $term alacritty
 
 # Program Launcher
 set $menu dmenu_path | dmenu | xargs swaymsg exec --
+
+# Autostart
+exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 
 # Wallpaper
 output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
@@ -21,8 +27,20 @@ default_border none
 gaps inner 5
 
 # Monitors
-output HDMI-A-1 mode 2560x1440@75Hz pos 0,0
-output eDP-1 mode 1920x1080@120Hz pos 320,1440
+set $output-extmon HDMI-A-1
+set $output-intmon eDP-1
+output $output-extmon mode 2560x1440@75Hz pos 0,0
+output $output-intmon mode 1920x1080@120Hz pos 320,1440
+workspace 1 output $output-extmon
+workspace 2 output $output-extmon
+workspace 3 output $output-extmon
+workspace 4 output $output-extmon
+workspace 5 output $output-extmon
+workspace 6 output $output-intmon
+workspace 7 output $output-intmon
+workspace 8 output $output-intmon
+workspace 9 output $output-intmon
+workspace 10 output $output-intmon
 
 # Keyboard settings
 input "1:1:AT_Translated_Set_2_keyboard" {

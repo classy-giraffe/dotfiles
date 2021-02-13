@@ -3,5 +3,6 @@
     "editor.suggestSelection": "first",
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
     "workbench.colorTheme": "Nord",
-    "window.menuBarVisibility": "hidden"
+    "window.menuBarVisibility": "hidden",
+    "editor.fontFamily": "MesloLGLDZ Nerd Font Mono"
 }
