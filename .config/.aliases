@@ -1,0 +1,3 @@
+alias sudo="doas"
+alias ls="exa -lag"
+alias config="/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
